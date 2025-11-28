@@ -1,0 +1,44 @@
+/* Общие стили */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+  transition: background 1.5s ease; /* плавная смена фона */
+}
+
+header, footer {
+  padding: 20px;
+  background-color: rgba(0,0,0,0.3);
+}
+
+/* Стили для сезонов */
+body.season-winter {
+  background: url('images/season/winter.jpg') no-repeat center/cover;
+}
+
+body.season-spring {
+  background: url('images/season/spring.jpg') no-repeat center/cover;
+}
+
+body.season-summer {
+  background: url('images/season/summer.jpg') no-repeat center/cover;
+}
+
+body.season-autumn {
+  background: url('images/season/autumn.jpg') no-repeat center/cover;
+}
+
+/* Анимация элементов */
+h1 {
+  animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0; transform: translateY(-20px);}
+  100% {opacity: 1; transform: translateY(0);}
+}
+
+p, ul {
+  animation: fadeIn 2.5s ease forwards;
+}
